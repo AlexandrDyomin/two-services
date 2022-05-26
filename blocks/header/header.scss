@@ -1,0 +1,9 @@
+@use "../../vars/vars.scss" as v;
+
+.header {
+	display: flex;
+	justify-content: space-between;	
+	align-items: center;	
+	min-height: 8.2rem;
+	background: v.$accent;
+}

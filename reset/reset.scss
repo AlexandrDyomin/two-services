@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+  font-family: Ubuntu, Arial, sans-serif;
+  font-size: 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+} 
+body {
+  margin: 0;
+}
+
+button {
+	border: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

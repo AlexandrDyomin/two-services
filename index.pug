@@ -1,0 +1,19 @@
+extends layouts/layout
+
+block vars
+	- let title = "Два сервиса"
+
+block scripts
+	script(src="index.js" type="module" defer)
+
+block styles
+	link(rel="stylesheet" href="style.scss")
+
+
+
+block templates
+
+block content
+	.container
+		include blocks/header/header
+
