@@ -1,0 +1,10 @@
+mixin card(id, subtitle, text, href = "#")
+	.card
+		.card__icon
+			<svg class="icon">
+				<use xlink:href=#{ `sprite.svg#${id}` }></use>
+			</svg>
+
+		h3.subtitle= subtitle
+		p.card__text= text
+		a.card__link(href=href) Узнать подробнее

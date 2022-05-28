@@ -4,12 +4,21 @@ html {
   font-size: 10px;
 }
 
+
 *, *::before, *::after {
   box-sizing: inherit;
 } 
+
+
 body {
   margin: 0;
 }
+
+
+h1, h2, h3 {
+  margin: 0;
+}
+
 
 button {
 	border: none;
@@ -17,13 +26,28 @@ button {
 	cursor: pointer;
 }
 
+
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+
 a {
   text-decoration: none;
   color: inherit;
+  transition: text-shadow .2s;
+}
+
+
+a:hover {
+  text-shadow: 2px 2px 1px black;
+}
+
+
+@media (min-width: 360px) {
+  html {
+    font-size: calc(10px + (13 - 10) * ((100vw - 360px) / (1920 - 360)));
+  }
 }

@@ -1,0 +1,12 @@
+@use "../../vars/vars.scss" as v;
+
+.subtitle {
+	font-size: 1.8rem;
+	line-height: 1.5;
+	font-weight: 700;
+	color: v.$subtitle;
+
+	&_white {
+		color: v.$nav;
+	}
+}

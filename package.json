@@ -14,5 +14,8 @@
     "@parcel/transformer-sass": "^2.6.0",
     "parcel": "^2.6.0",
     "sharp": "^0.29.3"
+  },
+  "dependencies": {
+    "tiny-slider": "^2.9.4"
   }
 }

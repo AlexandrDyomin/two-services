@@ -1,0 +1,57 @@
+@use "../../vars/vars.scss" as v;
+
+
+.card {
+    font-size: 1.4rem;
+    background: v.$nav;
+    padding: 2.7rem 2rem 2rem;
+    
+
+
+    &__icon {
+        width: 7rem;
+        height: 7rem;
+        margin-bottom: 2rem;
+
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .subtitle {
+        margin-bottom: 2rem;
+    }
+
+
+    &__text {
+        margin-bottom: 2rem;
+        font-weight: 400;
+        line-height: 2;
+        color: v.$text;
+    }
+
+
+    .card__link {
+    	font-weight: 700;
+    	line-height: 1.5;
+    	color: v.$accent;
+
+
+    	&::after {
+    		content: "";
+    		display: inline-block;
+    		width: 3.5rem;
+    		height: 1.1rem;
+    		background: url(blocks/card/arrow.svg) no-repeat center;
+    		background-size: contain;
+    		margin-left: 1rem;
+    	}
+
+
+    	&:hover {
+    		text-shadow: 1px 1px 1px;
+    	}
+    }
+}

@@ -1,10 +1,14 @@
-@forward "reset/reset.scss";
-@forward "blocks/burger/burger.scss";
-@forward "blocks/header/header.scss";
-@forward "blocks/container/container.scss";
-@forward "blocks/nav/nav.scss";
+@forward "layouts/layout.scss";
+@forward "blocks/hero/hero.scss";
+@forward "blocks/subtitle/subtitle.scss";
+@forward "blocks/card/card.scss";
+@forward "blocks/title/title.scss";
 
 
-body {
-	background: red;
+
+
+.serv {
+	.title {
+			margin-bottom: 3.2rem;
+	}
 }
