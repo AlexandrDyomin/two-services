@@ -1,0 +1,85 @@
+@use "vars/vars.scss" as v;
+
+
+.tns-nav {
+	padding: 0 5.5rem;
+	display: flex;
+	overflow-x: auto;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: -2.5rem;
+	margin-top: 5.5rem;
+	scrollbar-width: none;
+}
+
+
+.tns-nav::-webkit-scrollbar {
+	width: 0;
+}
+
+
+button[data-action=stop],
+button[data-action=start] {
+	display: none;
+}
+
+
+.tns-nav button {
+	flex-basis: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: v.$dot;
+	margin: 0 1rem;
+	flex-shrink: 0;
+
+
+	&.tns-nav-active {
+		background: v.$accent;
+	}
+}
+
+
+.tns-nav button:first-child {
+	margin-left: 0;
+}
+
+
+.tns-nav button:last-child {
+	margin-right: 0;
+}
+
+
+.tns-controls {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.tns-controls button {
+	width: 4rem;
+	height: 4rem;
+	background: v.$nav;
+	transition:  background .2s;
+
+
+	&:hover svg path{
+		fill: v.$nav;
+	}
+
+
+	&:hover {
+		background: v.$accent;
+	}
+}
+
+
+.tns-controls button svg {
+	vertical-align: middle;
+}
+
+
+.tns-controls button:first-child {
+	svg {
+		transform: rotate(180deg);
+	}		
+}

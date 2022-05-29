@@ -1,4 +1,4 @@
-mixin card(id, subtitle, text, href = "#")
+mixin card(id, subtitle, text, href)
 	.card
 		.card__icon
 			<svg class="icon">
@@ -7,4 +7,6 @@ mixin card(id, subtitle, text, href = "#")
 
 		h3.subtitle= subtitle
 		p.card__text= text
-		a.card__link(href=href) Узнать подробнее
+
+		if href
+			a.card__link(href=href) Узнать подробнее

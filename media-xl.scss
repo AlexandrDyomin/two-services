@@ -1,3 +1,13 @@
 @forward "blocks/container/media-xl.scss";
 @forward "blocks/nav/media-xl.scss";
 @forward "blocks/hero/media-xl.scss";
+
+
+@media (min-width: 1570px) {
+	.serv__container {
+		max-width: 1725px;
+		margin-left: calc((100vw - 1570px) / 2);
+		padding-right: 0;
+	}
+}
+

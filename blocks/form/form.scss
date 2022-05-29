@@ -1,0 +1,46 @@
+@use "../../vars/vars.scss" as v;
+
+.form {
+	padding: 2rem;
+	background: v.$nav;
+	
+
+	&__surname,
+	&__name,
+	&__email,
+	&__tel,
+	&__textarea{
+		background: v.$input;
+		width: 100%;
+		height: 6rem;
+		margin-bottom: 2.5rem;
+		padding: 2rem;
+		border: 1px solid v.$placeholder;
+
+		font-size: 1.6rem;
+		font-weight: 500;
+		line-height: 1.5;
+		color: v.$subtitle;
+	}
+
+
+	&__textarea {
+		height: 14.6rem;
+		resize: none;
+	}
+
+
+	&__button {
+		width: 100%;
+		padding: 0 1rem;
+		min-height: 6rem;
+		background: v.$accent;
+		color: v.$nav;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.4rem;
+		line-height: 2;
+		margin-top: 0.92rem;
+	}
+
+}
