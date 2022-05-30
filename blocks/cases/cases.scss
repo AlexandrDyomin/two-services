@@ -1,0 +1,13 @@
+@use "vars/vars.scss"as v;
+
+
+.cases {
+	padding: 6.5rem 0;
+	background: url(blocks/cases/line-3.png?as=webp) no-repeat,
+		        url(blocks/cases/line-4.png?as=webp) no-repeat,
+		        v.$bg;
+
+	.title {
+		margin-bottom: 3.2rem;
+	}
+}

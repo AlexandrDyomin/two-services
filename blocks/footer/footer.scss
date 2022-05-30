@@ -1,0 +1,45 @@
+@use "../../vars/vars.scss" as v;
+
+
+.footer {
+	background: v.$subtitle;
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 1.5;
+	color: v.$nav;
+	padding-top: 3rem;
+
+
+	.logo {
+		margin-bottom: 1rem;
+	}
+
+
+	&__nav {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: 3rem;
+		column-gap: 2rem; 
+		align-items: center;
+		margin-bottom: 4rem;
+	}
+
+
+	&__link:nth-child(2) {
+		font-size: 1.4rem;
+		margin-bottom: 1rem;
+	}
+
+
+	&__link:nth-child(even) {
+		padding-left: 2.4rem;
+	}
+
+
+	&__bottom {
+		padding: 3rem 0;
+		border-top: 1px solid rgba(v.$nav, 0.6);
+		color: rgba(v.$nav, 0.6);
+		font-size: 1.6rem;
+	}
+}
