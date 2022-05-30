@@ -30,10 +30,12 @@
 	&__bottom {
 		position: relative;
 		min-height: 42.8rem;
+		margin-bottom: -2.1rem;
 		background: url(blocks/feedback/line-5.png?as=webp) no-repeat 0 13rem,
 					url(blocks/feedback/line-6.png?as=webp) no-repeat 0 13rem,
 					url(blocks/feedback/line-7.png?as=webp) no-repeat 0 1rem,
-					url(blocks/feedback/line-8.png?as=webp) no-repeat 0 1rem;
+					url(blocks/feedback/line-8.png?as=webp) no-repeat 0 1rem, 
+					v.$bg;
 	}
 
 

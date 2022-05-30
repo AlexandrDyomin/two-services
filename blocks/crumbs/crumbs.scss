@@ -1,0 +1,26 @@
+@use "../../vars/vars.scss" as v;
+
+
+.crumbs {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: v.$nav;
+
+
+    span:last-child::before {
+    	content: "";
+    	display: inline-block;
+    	width: 1.5rem;
+    	height: 0.6em;
+    	background: url(blocks/crumbs/line.svg) no-repeat center / contain;
+    	margin-right: 2rem;
+    	pointer-events: none;
+    }
+
+
+    &__link {
+    	margin-right: 2rem;
+    }
+
+}

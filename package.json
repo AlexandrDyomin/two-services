@@ -4,7 +4,8 @@
   "description": "",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "start": "parcel index.pug --open"
+    "start": "parcel index.pug --open",
+    "build": "parcel build index.pug --no-source-maps"
   },
   "keywords": [],
   "author": "",

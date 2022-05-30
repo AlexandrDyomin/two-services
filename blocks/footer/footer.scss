@@ -8,6 +8,7 @@
 	line-height: 1.5;
 	color: v.$nav;
 	padding-top: 3rem;
+	position: relative;
 
 
 	.logo {
@@ -19,7 +20,7 @@
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		row-gap: 3rem;
-		column-gap: 2rem; 
+		column-gap: 4.4rem; 
 		align-items: center;
 		margin-bottom: 4rem;
 	}
@@ -28,11 +29,6 @@
 	&__link:nth-child(2) {
 		font-size: 1.4rem;
 		margin-bottom: 1rem;
-	}
-
-
-	&__link:nth-child(even) {
-		padding-left: 2.4rem;
 	}
 
 

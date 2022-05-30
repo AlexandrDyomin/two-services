@@ -12,6 +12,12 @@ html {
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 
@@ -28,7 +34,7 @@ button {
 }
 
 
-ul {
+ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;

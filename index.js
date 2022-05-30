@@ -1,6 +1,5 @@
 import { tns } from "tiny-slider";
-import "./blocks/burger/burger.js";
-import "./blocks/nav/nav.js";
+import "./layouts/layout.js";
 
 
 tns({

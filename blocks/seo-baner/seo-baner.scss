@@ -1,0 +1,19 @@
+@use "../../vars/vars.scss"as v;
+
+
+.seo-baner {
+    background: v.$accent;
+    min-height: calc(100vh - 8.2rem);
+    height: 1px;
+    padding-bottom: 4.1rem;
+    padding-top: 10%;
+
+
+    &__title {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 1.5;
+        color: v.$nav;
+        margin-top: 1.5rem;
+    }
+}

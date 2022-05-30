@@ -17,4 +17,5 @@ function handleBurgerClick(e) {
 	}
 
 	navList.classList.toggle("nav__list_open");
+	document.documentElement.classList.toggle("no-scroll");
 }
