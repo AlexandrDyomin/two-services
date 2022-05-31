@@ -1,0 +1,16 @@
+@use "../../vars/vars.scss" as v;
+
+.protection-banner {
+	background: v.$accent;
+	color: v.$nav;
+	min-height: 100vh;
+	padding: 25% 0 20rem;
+
+
+	&__title {
+		font-weight: 700;
+		line-height: 1.5;
+		font-size: 3rem;
+		margin: 1.5rem 0;
+	}
+}

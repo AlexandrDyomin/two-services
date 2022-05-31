@@ -1,0 +1,23 @@
+extends layouts/layout
+
+block vars
+	- let title = "Юридическая защита"
+
+
+block scripts
+	script(src="protection.js" type="module" defer)
+
+
+block styles
+	link(rel="stylesheet" href="protection.scss")
+
+
+block content
+	main
+		include blocks/protection-banner/protection-banner
+
+		include blocks/introduction/introduction
+
+		include blocks/legal-services/legal-services
+
+		include blocks/feedback/feedback
