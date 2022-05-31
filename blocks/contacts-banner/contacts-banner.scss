@@ -1,0 +1,27 @@
+@use "../../vars/vars.scss" as v;
+
+
+.contacts-banner {
+    min-height: 37.1rem;
+    padding: 3rem 0;
+    background: url(blocks/contacts-banner/line-1.png?as=webp) no-repeat,
+        		url(blocks/contacts-banner/line-2.png?as=webp) no-repeat;
+    font-weight: 700;
+    line-height: 1.5;
+
+
+    &__title {
+        font-size: 3rem;
+        color: v.$subtitle;
+        margin: 2rem 0 4rem;
+    }
+
+
+    &__email,
+    &__tel {
+    	display: block;
+    	font-size: 2.4rem;
+    	color: v.$accent;
+    	margin-bottom: 4rem;
+    }
+}

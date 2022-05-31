@@ -1,0 +1,20 @@
+extends layouts/layout
+
+
+block vars
+	-let title = "Контакты"
+
+
+block scripts
+	script(src="contacts.js" type="module" defer)
+
+
+block styles
+	link(rel="stylesheet" href="contacts.scss")
+
+
+block content
+	main
+		include blocks/contacts-banner/contacts-banner
+
+		include blocks/feedback/feedback

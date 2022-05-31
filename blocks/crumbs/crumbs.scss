@@ -7,6 +7,7 @@
     line-height: 1.5;
     color: v.$nav;
 
+    
 
     span:last-child::before {
     	content: "";
@@ -23,4 +24,14 @@
     	margin-right: 2rem;
     }
 
+
+    &_dark {
+        color: v.$text;
+
+
+        span:last-child::before {
+            background-image: url(blocks/crumbs/line-dark.png?as=webp);
+
+        }
+    }
 }
