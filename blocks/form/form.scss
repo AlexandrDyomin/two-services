@@ -3,6 +3,8 @@
 .form {
 	padding: 2rem;
 	background: v.$nav;
+	max-width: 600px;
+	margin: 0 auto;
 	
 
 	&__surname,
@@ -30,6 +32,12 @@
 	}
 
 
+	input::placeholder,
+	textarea::placeholder {
+		opacity: 0.3;
+	}
+
+
 	&__button {
 		width: 100%;
 		padding: 0 1rem;
@@ -41,6 +49,32 @@
 		font-size: 1.4rem;
 		line-height: 2;
 		margin-top: 0.92rem;
+		transition: background .2s,
+					color .2s,
+					outline .2s;
+
+
+		&:hover {
+			background: v.$nav;
+			color: v.$accent;
+			outline: 1px solid v.$accent;
+		}
 	}
 
+}
+
+
+
+@media (min-width: 1175px) {
+    .form {
+    	margin-right: 0;
+    	&__surname,
+		&__name,
+		&__email,
+		&__tel,
+		&__textarea,
+		&__button {
+        	font-size: 24px;
+		}
+    }
 }

@@ -4,8 +4,7 @@
 .card {
     font-size: 1.4rem;
     background: v.$nav;
-    padding: 2.7rem 2rem 2rem;
-    
+    padding: 2.7rem 2rem 2rem;    
 
     &__icon {
         width: 7rem;
@@ -26,8 +25,31 @@
 
     &__text {
         margin-bottom: 2rem;
-        font-weight: 400;
-        line-height: 2;
-        color: v.$text;
+    }
+
+}
+
+
+
+
+@media (min-width: 640px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .link {
+        margin-top: auto;
     }
 }
+
+
+@media (min-width: 1175px) {
+    .card__icon {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+

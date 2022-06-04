@@ -10,3 +10,10 @@
 		color: v.$nav;
 	}
 }
+
+
+@media (min-width: 1175px) {
+    .subtitle {
+        font-size: 30px;
+    }
+}

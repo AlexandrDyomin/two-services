@@ -7,3 +7,11 @@
     line-height: 1.5;
     color: v.$subtitle;
 }
+
+
+
+@media (min-width: 1175px) {
+    .title {
+        font-size: 64px;
+    }
+}

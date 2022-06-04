@@ -31,6 +31,8 @@ button[data-action=start] {
 	background: v.$dot;
 	margin: 0 1rem;
 	flex-shrink: 0;
+	transition: flex-basis .2s,
+				border-radius .2s;
 
 
 	&.tns-nav-active {
@@ -83,3 +85,49 @@ button[data-action=start] {
 		transform: rotate(180deg);
 	}		
 }
+
+
+
+
+@media (min-width: 640px) {
+	.tns-nav {
+		padding-left: 0;
+		justify-content: flex-start;
+	}
+
+
+	.tns-nav button {
+		flex-basis: 15px;
+		height: 15px;
+
+
+		&.tns-nav-active {
+			flex-basis: 50px;
+			border-radius: 19px;
+		}
+	}
+
+
+	.tns-controls button:first-child {
+		margin-left: auto;
+		margin-right: 30px;
+	}
+
+
+	.tns-controls button:last-child {
+		margin-right: 2rem;
+	}
+}
+
+
+
+
+
+
+@media (min-width: 1570px) {
+    .tns-controls button:last-child {
+        margin-right: calc((100% - 1570px + 4rem));
+	}
+
+}
+

@@ -2,12 +2,45 @@
 
 
 .cases {
-	padding: 6.5rem 0;
-	background: url(blocks/cases/line-3.png?as=webp) no-repeat,
-		        url(blocks/cases/line-4.png?as=webp) no-repeat,
-		        v.$bg;
+    padding: 6.5rem 0;
+    background: url(blocks/cases/lines.png?as=webp) no-repeat center / cover,
+                v.$bg;
 
-	.title {
-		margin-bottom: 3.2rem;
-	}
+    .title {
+        margin-bottom: 3.2rem;
+    }
+
+
+    .card__text:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+@media (min-width: 640px) {
+    .cases__slider {
+        display: flex;
+        align-items: stretch;
+    }
+}
+
+
+
+@media (min-width: 900px) {
+    .cases__slider_no-slider {
+        gap: 20px;
+
+        .cases__column {
+            flex-basis: calc(100% / 3);
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        .cases__slider-item {
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+    }
 }

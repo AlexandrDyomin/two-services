@@ -2,6 +2,8 @@
 
 
 .feedback {
+	margin-bottom: -12.5rem;
+
 
 	&__top {
 		min-height: 42.8rem;
@@ -13,6 +15,7 @@
 	.title {
 		margin-bottom: 2rem;
 	}
+
 
 	.title,
 	&__text {
@@ -28,20 +31,22 @@
 
 
 	&__bottom {
-		position: relative;
 		min-height: 42.8rem;
-		margin-bottom: -2.1rem;
-		background: url(blocks/feedback/line-5.png?as=webp) no-repeat 0 13rem,
-					url(blocks/feedback/line-6.png?as=webp) no-repeat 0 13rem,
-					url(blocks/feedback/line-7.png?as=webp) no-repeat 0 1rem,
-					url(blocks/feedback/line-8.png?as=webp) no-repeat 0 1rem, 
+		background: url(blocks/feedback/lines.png?as=webp) no-repeat 0 100% / cover,
 					v.$bg;
 	}
 
 
 	&__form {
-		position: absolute;
-		top: -19.1rem;
-		margin: 0 2rem;
+		transform: translateY(-19.1rem);
 	}
+}
+
+
+
+
+@media (min-width: 1175px) {
+    .feedback__text {
+        font-size: 24px;
+    }
 }
