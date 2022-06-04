@@ -48,7 +48,7 @@
 	
 	&__marker {
 		font-weight: 700;
-		font-size: 4.8rem;
+		font-size: 48px;
 		left: 1.5;
 		color: v.$accent;
 		margin-right: 1rem;
@@ -57,5 +57,87 @@
 
 	&__list .process__text {
 		margin-left: 5rem;
+	}
+}
+
+
+
+
+
+
+@media (min-width: 968px) {
+	.process {
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			gap: 70px;
+			margin-bottom: 50px;
+		}
+
+
+		&__img,
+		&__wrap {
+			flex-basis: 50%;
+			margin-bottom: 0;
+		}
+
+
+		&__img {
+			max-width: 50rem;
+			height: 35rem;
+		}
+
+
+		&__list {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 60px 60px;
+		}
+
+
+		&__list-item:not(:last-child) {
+			margin-bottom: 0;
+		}
+
+
+		&__list .process__text {
+			margin-left: 0;
+		}	
+	}
+}
+
+
+
+@media (min-width: 1175px) {
+	.process {
+		.subtitle {
+			font-size: 22px;
+		}
+
+
+		&__list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+	}
+}
+
+
+
+@media (min-width: 1532px) {
+	.process {
+		padding: 100px 0;
+
+		
+		&__marker { 
+			font-size: 64px;
+		}
+
+
+		&__list {
+			grid-template-columns: repeat(4, 1fr);
+		}
+
 	}
 }

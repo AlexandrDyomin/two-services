@@ -2,8 +2,8 @@
 
 
 .seo-cards {
-	background: url(blocks/seo-cards/line-1.png) no-repeat,
-				url(blocks/seo-cards/line-2.png) no-repeat, v.$bg;
+	background: url(blocks/seo-cards/lines.svg) no-repeat center / cover,
+				v.$bg;
 	margin-bottom: -21.1rem;
 
 
@@ -42,5 +42,24 @@
 		font-size: 1.4rem;
 		line-height: 2;
 		color: v.$text;
+	}
+}
+
+
+@media (min-width: 640px) {
+	.seo-cards {
+		margin-bottom: -10.1rem;
+
+	}
+	.seo-cards__container {
+		display: grid;
+		grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+		gap: 20px;
+	}
+
+
+	.seo-cards__item {
+		margin-bottom: 0;
+		transform: translateY(-15.1rem);
 	}
 }

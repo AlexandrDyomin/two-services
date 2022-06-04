@@ -4,8 +4,8 @@
 .contacts-banner {
     min-height: 37.1rem;
     padding: 3rem 0;
-    background: url(blocks/contacts-banner/line-1.png?as=webp) no-repeat,
-        		url(blocks/contacts-banner/line-2.png?as=webp) no-repeat;
+    background: url(blocks/contacts-banner/lines.svg) no-repeat 0 100px / cover,
+        		v.$bg;
     font-weight: 700;
     line-height: 1.5;
 
@@ -23,5 +23,39 @@
     	font-size: 2.4rem;
     	color: v.$accent;
     	margin-bottom: 4rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .contacts-banner {
+        min-height: 550px;
+    }
+}
+
+
+@media (min-width: 1175px) {
+    .contacts-banner__title {
+        font-size: 5rem;
+    }
+
+
+    .contacts-banner__tel,
+    .contacts-banner__email {
+        font-size: 24px;
+    }
+}
+
+
+@media (min-width: 1520px) {
+    .contacts-banner {
+        background-position: 0 0; 
+    }
+}
+
+
+@media (min-width: 1920px) {
+    .contacts-banner__title {
+        font-size: 72px;
     }
 }

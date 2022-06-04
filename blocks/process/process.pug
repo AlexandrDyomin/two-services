@@ -1,11 +1,16 @@
 section.process
 	.container
-		.process__img
-			img(src="blocks/process/process.png?as=webp" alt="")
+		.process__info
+			.process__img
+				img(
+					srcset="blocks/process/process-lg.png?as=webp 715w, blocks/process/process.png?as=webp 320w"
+					sizes="(min-width: 1024px) 715px, (min-width:320px) 320px"
+					src="blocks/process/process.png?as=webp" alt=""
+				)
 
-		.process__wrap
-			.title Процесс работы
-			.process__text Два Сервиса — IT компания, которая занимается разработкой, комплексным продвижением и юридической защитой сайтов. Мы — это сложившаяся команда веб-разработчиков, SMM-специалистов, email-маркетологов, SEO-специалистов, юристов. В нашей команде решена задача взаимодействия разных сфер деятельности - IT технологий и юриспруденции.
+			.process__wrap
+				.title Процесс работы
+				.process__text Два Сервиса — IT компания, которая занимается разработкой, комплексным продвижением и юридической защитой сайтов. Мы — это сложившаяся команда веб-разработчиков, SMM-специалистов, email-маркетологов, SEO-специалистов, юристов. В нашей команде решена задача взаимодействия разных сфер деятельности - IT технологий и юриспруденции.
 		ol.process__list
 			li.process__list-item
 				.process__top
