@@ -1,0 +1,31 @@
+extends layouts/layout
+
+
+block vars
+	- let title = "SEO-продвижение сайтов"
+
+
+block scripts
+	script(src="seo.js" type="module" defer)
+
+
+block styles
+	link(rel="stylesheet" href="seo.scss")
+	
+	link(rel="stylesheet" href="seo.media-1175.scss" media="screen and (min-width: 1175px)")
+	
+	link(rel="stylesheet" href="seo.media-1570.scss" media="screen and (min-width: 1570px)")
+
+
+
+
+block content
+	main
+		include blocks/seo-banner/seo-banner
+
+		include blocks/seo-cards/seo-cards	
+
+		include blocks/process/process
+
+
+		include blocks/feedback/feedback

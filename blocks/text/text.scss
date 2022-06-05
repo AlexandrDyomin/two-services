@@ -1,0 +1,16 @@
+@use "../../vars/vars.scss" as v;
+
+
+.text {
+        font-weight: 400;
+        line-height: 2;
+        color: v.$text;
+        font-size: 1.4rem;
+}
+
+
+@media (min-width: 1175px) {
+    .text {
+        font-size: 18px;
+    }
+}

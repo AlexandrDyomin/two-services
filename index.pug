@@ -1,0 +1,41 @@
+extends layouts/layout
+
+
+block vars
+	- let title = "Два сервиса"
+
+
+block scripts
+	script(src="index.js" type="module" defer)
+
+
+block styles
+	link(rel="stylesheet" href="style.scss")
+
+	link(rel="stylesheet" href="media-md.scss" media="screen and (min-width: 768px)")
+
+	link(rel="stylesheet" href="media-lg.scss" media="screen and (min-width: 1175px)")
+
+	link(rel="stylesheet" href="media-xl.scss" media="screen and (min-width: 1570px)")
+
+
+block templates
+	include blocks/card/card.pug
+
+
+block content
+
+	.wrapper
+		.container
+			include blocks/hero/hero
+
+	main
+		include blocks/serv/serv
+
+		include blocks/aboutus/aboutus
+		
+		include blocks/cases/cases
+		
+		include blocks/partners/partners
+		
+		include blocks/feedback/feedback		

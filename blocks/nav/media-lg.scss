@@ -1,0 +1,36 @@
+@media (min-width: 1175px) {
+	.nav {
+		flex: 1;
+		font-weight: 700;
+		font-size: 1.4rem;
+	}
+
+
+	.nav__list {
+		position: static;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: auto;
+
+
+		&_hidden {
+			visibility: visible;
+		}
+	}
+
+
+	.nav__list-item {
+		margin: 0 3rem;
+	}
+
+
+	.nav__list-item:last-child {
+		margin: 0 0 0 auto;
+	}
+
+
+	.nav__list-item:first-child {
+		margin-left: auto;
+	}
+}
