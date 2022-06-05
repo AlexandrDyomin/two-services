@@ -1,16 +1,48 @@
-@use "../../vars/vars.scss" as v;
+@use "../../vars/vars.scss"as v;
 
 .protection-banner {
-	background: v.$accent;
-	color: v.$nav;
-	min-height: 100vh;
-	padding: 25% 0 20rem;
+    background: v.$accent;
+    color: v.$nav;
+    min-height: calc(100vh - 8.2rem);
+    padding: 50px 0 20rem;
 
 
-	&__title {
-		font-weight: 700;
-		line-height: 1.5;
-		font-size: 3rem;
-		margin: 1.5rem 0;
-	}
+    &__title {
+        font-weight: 700;
+        line-height: 1.5;
+        font-size: 3rem;
+        margin: 1.5rem 0;
+    }
+}
+
+
+
+
+
+@media (min-width: 820px) {
+    .protection-banner {
+        padding-top: 100px;
+    }
+}
+
+
+
+@media (min-width: 1175px) {
+    .protection-banner {
+        min-height: calc(100vh - 12rem);
+
+    }
+
+
+    .protection-banner__title {
+        font-size: 5rem;
+    }
+}
+
+
+
+@media (min-width: 1920px) {
+    .protection-banner__title {
+        font-size: 72px;
+    }
 }

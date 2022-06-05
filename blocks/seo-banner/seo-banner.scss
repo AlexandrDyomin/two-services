@@ -20,6 +20,11 @@
 
 
 @media (min-width: 1175px) {
+    .seo-banner {
+        min-height: calc(100vh - 12rem);
+    }
+
+
     .seo-banner__title {
         font-size: 5rem;
     }

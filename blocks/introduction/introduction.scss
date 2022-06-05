@@ -1,41 +1,95 @@
-@use "../../vars/vars.scss" as v;
+@use "../../vars/vars.scss"as v;
 
 
 .introduction {
-	background: url(blocks/introduction/lines.png?as=webp),
-				v.$bg;		
+    background: url(blocks/introduction/lines.svg) no-repeat center,
+        		v.$bg;
 
-	&__card {
-		padding: 4rem 2rem;
-		background: v.$nav;
+    &__card {
+        padding: 4rem 2rem;
+        background: v.$nav;
 
-		transform: translateY(-32rem);
-		margin-bottom: -27rem;
-	}
-
-
-	&__img {
-		max-width: 28rem;
-		height: 27.9rem;
-		margin: 0 auto 4rem;
+        transform: translateY(-32rem);
+        margin-bottom: -27rem;
+    }
 
 
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	}
+    &__img {
+        max-width: 28rem;
+        height: 27.9rem;
+        margin: 0 auto 4rem;
 
 
-	.subtitle {
-		margin-bottom: 2rem;
-	}
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-	&__text {
-		font-weight: 400;
-		font-size: 1.4rem;
-		line-height: 2;
-		color: v.$text;
-		margin-bottom: 2rem;
-	}
+
+    .subtitle {
+        margin-bottom: 2rem;
+    }
+
+
+    &__text {
+        font-weight: 400;
+        font-size: 1.4rem;
+        line-height: 2;
+        color: v.$text;
+        margin-bottom: 2rem;
+    }
+
+
+    .introduction__text.introduction__text_bold {
+    	font-weight: 500;
+    }
+}
+
+
+
+@media (min-width: 820px) {
+    .introduction {
+        &__card {
+            transform: translateY(-12rem);
+            margin-bottom: -7rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            padding: 8rem 6rem;
+        }
+
+
+        &__img,
+        &__info {
+        	width: 50%;
+        	margin: 0;
+        }
+    }
+}
+
+
+@media (min-width: 1175px) {
+    .introduction {
+       &__img {
+       		max-width: 500px;
+       		height: 498px;
+
+
+       		img {
+       			object-fit: contain;
+       		}
+       }
+    }
+}
+
+
+@media (min-width: 1436px) {
+    .introduction {
+       &__img {
+       		max-width: 665px;
+       		height: 663px;
+       }
+    }
 }
